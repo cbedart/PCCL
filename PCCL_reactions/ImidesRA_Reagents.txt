@@ -1,0 +1,81 @@
+Lib_ID: ima
+Minimum_Purchasability_Code: 0
+
+
+Synthon SMARTS:
+IMA	[OH]C([CH2][C;!R]([C;!c])=O)=O
+IMA_tBu	O=C([CH2][C;!R]([C;!c])=O)OC([CH3])([CH3])[CH3]
+IMA_OMe	O=C([CH2][C;!R]([C;!c])=O)O[CH3]
+IMA_OEt	O=C([CH2][C;!R]([C;!c])=O)O[CH2][CH3]
+IMA_OBe	O=C([CH2][C;!R]([C;!c])=O)O[CH2][c]1[cH1][cH1][cH1][cH1][cH1]1
+end
+
+Allow Multiple Symmetric Synthons:
+end
+
+
+Global Exclusion SMARTS:
+[OX2H][cX3]:[c]
+[NX3;H2;!$(NC=[!#6]);!$(NC#[!#6])][#6]
+[NX3][$(C=C),$(cc)]
+[NX3][CX3]=[NX3+]
+[#16X2H]
+[nX3H1]
+[NX3][OX2H]
+[NX3][NX2]=[*]
+[NX3][NX3]
+[OH]C([CH2][C;!R]([C;!c])=O)=O.[OH]C([CH2][C;!R]([C;!c])=O)=O
+end
+
+
+Synthon Specific Exclusion SMARTS:
+IMA
+O=COC([CH3])([CH3])[CH3]
+O=CO[CH3]
+O=CO[CH2][CH3]
+O=CO[CH2][c]1[cH1][cH1][cH1][cH1][cH1]1
+end
+IMA_tBu
+O=COC([CH3])([CH3])[CH3].O=COC([CH3])([CH3])[CH3]
+O=CO[CH3]
+O=CO[CH2][CH3]
+O=CO[CH2][c]1[cH1][cH1][cH1][cH1][cH1]1
+[OH]C([CH2][C;!R]([C;!c])=O)=O
+end
+IMA_OMe
+O=COC([CH3])([CH3])[CH3]
+O=CO[CH3].O=CO[CH3]
+O=CO[CH2][CH3]
+O=CO[CH2][c]1[cH1][cH1][cH1][cH1][cH1]1
+[OH]C([CH2][C;!R]([C;!c])=O)=O
+end
+IMA_OEt
+O=COC([CH3])([CH3])[CH3]
+O=CO[CH3]
+O=CO[CH2][CH3].O=CO[CH2][CH3]
+O=CO[CH2][c]1[cH1][cH1][cH1][cH1][cH1]1
+[OH]C([CH2][C;!R]([C;!c])=O)=O
+end
+IMA_OBe
+O=COC([CH3])([CH3])[CH3]
+O=CO[CH3]
+O=CO[CH2][CH3]
+O=CO[CH2][c]1[cH1][cH1][cH1][cH1][cH1]1.O=CO[CH2][c]1[cH1][cH1][cH1][cH1][cH1]1
+[OH]C([CH2][C;!R]([C;!c])=O)=O
+end
+
+Max Heavy Atom Count:
+IMA	99
+IMA_tBu	99
+IMA_OMe	99
+IMA_OEt	99
+IMA_OBe	99
+
+
+Reaction Tags:
+IMA	A
+IMA_tBu	tBu
+IMA_OMe	Me
+IMA_OEt	Et
+IMA_OBe	Be
+

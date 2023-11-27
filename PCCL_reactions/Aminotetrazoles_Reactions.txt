@@ -1,0 +1,12 @@
+Bespoke Library ID:	atz
+
+Product Restrictions:
+Max_Product_HAC	99
+Max_Product_LogP	99
+Max_Product_RotatableBonds	99
+Max_Purchasability	99
+end
+
+Reactions:
+[NX3;H2,H1;!$(NC=O):1].S=C=N[*;!H;!$(C=O):3]>>[*:1](C1=NN=NN1[*:3])	AB	ATZ
+end

@@ -1,0 +1,14 @@
+Bespoke Library ID:	ima
+
+Product Restrictions:
+Max_Product_HAC	30
+Max_Product_LogP	3.5
+Max_Product_RotatableBonds	7
+Max_Purchasability	6
+end
+
+Reactions:
+O=C([*:2])[O:1][CH3]>>O=C([*:2])[OH:1]	A	IMA_Me
+O=C([*:2])[O:1][CH2][CH3]>>O=C([*:2])[OH:1]	B	IMA_Et
+O=C([*:2])[O:1]C([CH3])([CH3])[CH3]>>O=C([*:2])[OH:1]	C	IMA_tBu
+end

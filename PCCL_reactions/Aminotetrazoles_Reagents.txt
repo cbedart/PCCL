@@ -1,0 +1,98 @@
+Lib_ID: atz
+Minimum_Purchasability_Code: 0
+
+
+Synthon SMARTS:
+ATZ_A [NX3;H2,H1;!$(NC=O)]
+ATZ_B S=C=N[*;!H;!$(C=O)]
+end
+
+Allow Multiple Symmetric Synthons:
+end
+
+
+Global Exclusion SMARTS:
+[CX3](=O)[OX1H0-,OX2H1]
+[F,Cl,Br,I][CX4]
+[+X4][*,!O-]
+[*]=[CR]=[*]
+[C-X3]
+S(=O)(=O)F
+P=C
+N=C=N
+[#14&H1,#14&H2,#14&H3]
+O=C-,:N=[N&+]=[N&-]
+FB(F)F
+S(=O)(=O)-,:[Cl,Br]
+[Si]-[I,Br,Cl,F]
+O-,:S(=O)(=O)-,:C(-,:F)(-,:F)-,:F
+C(=O)-,:O-,:n:,-n:,-n
+O-,:[Cl](-,:O)(-,:O)-,:O
+C(=O)-,:O-,:c1:,-c(-,:F):,-c(-,:F):,-c(-,:F):,-c(-,:F):,-c:,-1-,:F
+[Si]O
+S-,:C#N
+O-,:O
+P=S
+N-,:P(=O)(-,:N)-,:N
+C=C-[CD2]=O
+[CX3]C(=O)Br
+[CX4]C(=O)I
+[C&X4;C&H1,C&H2]-I
+[C&X4;C&H1,C&H2]-[Br]
+[N&R0]-,:[N&R0]-,:C=O
+[#8&D1]-,:[#5](-,:[#6])-,:[#8&D1]
+[CX4]C(=O)Br
+[CX4]C(=O)Cl
+[CX3]C(=O)I
+[CX3]C(=O)Cl
+N#C-,:C-,:[O&H1]
+[CX3][N+]#[C-]
+[C&X4;C&H1,C&H2]-[Cl]
+c-,:P-,:c
+[S,C](=[O,S])-,:[F,Br,Cl,I]
+[P,S]-,:[Cl,Br,F,I]
+S-,:S
+C(=O)-,:O-,:C=O
+[CX4][N+]#[C-]
+N#C-,:C=C
+C(=O)-,:O-,:c1:,-c:,-c:,-c(-,:[N+](=O)[O-]):,-c:,-c:,-1
+end
+
+
+Synthon Specific Exclusion SMARTS:
+ATZ_A
+[CX3]=[OX1]
+[OH][CX3]=[CX3]
+[SX2]
+[NX3][CX3]=[SX1]
+[CX3]=[N][OH]
+[N][OH]
+[NX3;H2,H1;!$(NC=O)].[NX3;H2,H1;!$(NC=O)]
+[P][NX3;H2,H1;!$(NC=O)]
+[NX3;H2,H1;!$(NC=O)][*][*][OH]
+[$([SX4](=O)(=O)(O)O),$([SX4+2]([O-])([O-])(O)O)]
+[$([#16X4](=[OX1])=[OX1]),$([#16X4+2]([OX1-])[OX1-])]
+S=C=N
+end
+
+ATZ_B
+[Sn][O]
+[$(S1CSCC1),$(S2SCCC2)]
+[$(C3CSCCS3),$(C4CCCSS4),$(S5SCCC5)]
+[SX2]
+[NX3][CX3]=[SX1]
+[OX2][CX3](=[SX1])
+[OX1]=[CX2]=[NX2]
+[NX3;H2,H1;!$(NC=O)]
+S=C=N.S=C=N
+end
+
+Max Heavy Atom Count:
+ATZ_A 25
+ATZ_B 25
+
+
+Reaction Tags:
+ATZ_A A
+ATZ_B B
+

@@ -1,0 +1,12 @@
+Bespoke Library ID:	im
+
+Product Restrictions:
+Max_Product_HAC	30
+Max_Product_LogP	3.5
+Max_Product_RotatableBonds	7
+Max_Purchasability	6
+end
+
+Reactions:
+[O:1]=C1[O:2][C:6](C)(C)[O:3]C([*,H:22])=C1[*,H:21].[*,H:23]C([N:5]([H:99])[*,H:24])=[O:4]>>[O:4]=C([*,H:23])[N:5]([*,H:24])C(C([*,H:21])C([*,H:22])=[O:3])=[O:1].[H:99][O:2][C:6](C)C	AB	IM
+end

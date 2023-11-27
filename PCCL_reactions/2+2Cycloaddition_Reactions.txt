@@ -1,0 +1,15 @@
+Bespoke Library ID:	22c
+
+Product Restrictions:
+Max_Product_HAC	99
+Max_Product_LogP	99
+Max_Product_RotatableBonds	99
+Max_Purchasability	99
+end
+
+Reactions:
+C(=O)(OC=O)[*:1].[CX3H2]=C([*:2])([*:3])>>C1(=C2C(CCC1)C(C2)([*:2])[*:3])OC([*:1])=O	AB	22C_1
+ClC(=O)[*:1].[CX3H2]=C([*:2])([*:3])>>C1(=C2C(CCC1)C(C2)([*:2])[*:3])OC([*:1])=O	ZB	22C_2
+C(=O)(OC=O)[*:1].[CX3H2]=C([*:2])([*:3])>>C1(=C2C(CCC1)C(C2)([*:2])[*:3])OC([*:1])=O	AC	22C_3
+ClC(=O)[*:1].[CX3H2]=C([*:2])([*:3])>>C1(=C2C(CCC1)C(C2)([*:2])[*:3])OC([*:1])=O	ZC	22C_4
+end

@@ -1,0 +1,23 @@
+Bespoke Library ID:	ts
+
+Product Restrictions:
+Max_Product_HAC	99
+Max_Product_LogP	99
+Max_Product_RotatableBonds	99
+Max_Purchasability	9
+end
+
+Reactions:
+[a:1][OX2H1,NX3H2,SX2H1:2].[F,Cl,Br,I][$(C=O):3][CX4H2!R,CX4H3!R:5][H]>>[*:5]([a:1])([$(C=O):3][*:2])	AB	TS_ab
+[a:1][$([SX4](=[OX1])(=[OX1])[NX3H2])].[F,Cl,Br,I][$(C=O):3][CX4H2!R,CX4H3!R:5][H]>>[*:5]([a:1])([$(C=O):3]O)	ZB	TS_zb
+[a:1][OX2H1,NX3H2,SX2H1:2].[F,Cl,Br,I][$(C=O):3][CX4H2:6][CX4H2!R,CX4H3!R:5][H]>>[*:5]([a:1])([*:6][$(C=O):3][*:2])	AC	TS_ac
+[a:1][$([SX4](=[OX1])(=[OX1])[NX3H2])].[F,Cl,Br,I][$(C=O):3][CX4H2:6][CX4H2!R,CX4H3!R:5][H]>>[*:5]([a:1])([*:6][$(C=O):3]O)	ZC	TS_zc
+[a:1][OX2H1,NX3H2,SX2H1:2].[F,Cl,Br,I][$(C=O):3][CX4H2:7][CX4H2:6][CX4H2!R,CX4H3!R:5][H]>>[*:5]([a:1])([*:7][*:6][$(C=O):3][*:2])	AD	TS_ad
+[a:1][$([SX4](=[OX1])(=[OX1])[NX3H2])].[F,Cl,Br,I][$(C=O):3][CX4H2:7][CX4H2:6][CX4H2!R,CX4H3!R:5][H]>>[*:5]([a:1])([*:7][*:6][$(C=O):3]O)	ZD	TS_zd
+[a:1][OX2H1,NX3H2,SX2H1:2].[F,Cl,Br,I][$(C=O):3][CX4H1!R:5]([H])([*:9])>>[*:5]([*:9])([a:1])([$(C=O):3][*:2])	AE	TS_ae
+[a:1][$([SX4](=[OX1])(=[OX1])[NX3H2])].[F,Cl,Br,I][$(C=O):3][CX4H1!R:5]([H])([*:9])>>[*:5]([*:9])([a:1])([$(C=O):3]O)	ZE	TS_ze
+[a:1][OX2H1,NX3H2,SX2H1:2].[F,Cl,Br,I][$(C=O):3][CX4H2:6][CX4H1!R:5]([H])([*:9])>>[*:5]([*:9])([a:1])([*:6][$(C=O):3][*:2])	AF	TS_af
+[a:1][$([SX4](=[OX1])(=[OX1])[NX3H2])].[F,Cl,Br,I][$(C=O):3][CX4H2:6][CX4H1!R:5]([H])([*:9])>>[*:5]([*:9])([a:1])([*:6][$(C=O):3]O)	ZF	TS_zf
+[a:1][OX2H1,NX3H2,SX2H1:2].[F,Cl,Br,I][$(C=O):3][CX4H2:7][CX4H2:6][CX4H1!R:5]([H])([*:9])>>[*:5]([*:9])([a:1])([*:7][*:6][$(C=O):3][*:2])	AG	TS_ag
+[a:1][$([SX4](=[OX1])(=[OX1])[NX3H2])].[F,Cl,Br,I][$(C=O):3][CX4H2:7][CX4H2:6][CX4H1!R:5]([H])([*:9])>>[*:5]([*:9])([a:1])([*:7][*:6][$(C=O):3]O)	ZG	TS_zg
+end

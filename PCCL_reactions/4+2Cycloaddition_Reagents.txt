@@ -1,0 +1,221 @@
+Lib_ID: 42c
+Minimum_Purchasability_Code: 0
+
+Synthon SMARTS:
+42C_A_Anhydride [#6][CX3D3!R](=O)[O!R][CX3D3!R](=O)[#6]
+42C_A_AcylChloride [#6][CX3D3!R](=O)Cl
+42C_B_Furan_2H [cX3H1]1o[cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+42C_B_Furan_1H [cX3H0&$(c!@[#6])]1o[cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+42C_B_Furan_0H [cX3H0&$(c!@[#6])]1o[cX3H0&$(c!@[#6])][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+42C_B_Pentole_2H [CX3H1]1=[CX3H0&$(C!@[#6]),CX3H1][CX3H0&$(C!@[#6]),CX3H1]=[CX3H1][CX4H2]1
+42C_B_Pentole_1H [CX3H0&$(C!@[#6])]1=[CX3H0&$(C!@[#6]),CX3H1][CX3H0&$(C!@[#6]),CX3H1]=[CX3H1][CX4H2]1
+42C_B_Pentole_0H [CX3H0&$(C!@[#6])]1=[CX3H0&$(C!@[#6]),CX3H1][CX3H0&$(C!@[#6]),CX3H1]=[CX3H0&$(C!@[#6])][CX4H2]1
+42C_B_Pyrrole_2H [cX3H1]1n([#6!c])[cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+42C_B_Pyrrole_1H [cX3H0&$(c!@[#6])]1n([#6!c])[cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+42C_B_Pyrrole_0H [cX3H0&$(c!@[#6])]1n([#6!c])[cX3H0&$(c!@[#6])][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+end
+
+Allow Multiple Symmetric Synthons:
+42C_A_Anhydride [*:1]C(=O)OC(=O)[*:2]
+end
+
+Global Exclusion SMARTS:
+S(=O)(=O)F
+P=C
+N=C=N
+[#14&H1,#14&H2,#14&H3]
+O=C-,:N=[N&+]=[N&-]
+FB(F)F
+S(=O)(=O)-,:[Cl,Br]
+[Si]-[I,Br,Cl,F]
+O-,:S(=O)(=O)-,:C(-,:F)(-,:F)-,:F
+C(=O)-,:O-,:n:,-n:,-n
+O-,:[Cl](-,:O)(-,:O)-,:O
+C(=O)-,:O-,:c1:,-c(-,:F):,-c(-,:F):,-c(-,:F):,-c(-,:F):,-c:,-1-,:F
+[Si]O
+S-,:C#N
+O-,:O
+N=C=[S,O]
+P=S
+N-,:P(=O)(-,:N)-,:N
+C=C-[CD2]=O
+[CX3]C(=O)Br
+[CX4]C(=O)I
+[C&X4;C&H1,C&H2]-I
+[C&X4;C&H1,C&H2]-[Br]
+[N&R0]-,:[N&R0]-,:C=O
+[OH]B(C)[OH]
+[CX4]C(=O)Br
+[CX3]C(=O)I
+[CX3]C(=O)Cl
+N#C-,:C-,:[O&H1]
+[CX3][N+]#[C-]
+[C&X4;C&H1,C&H2]-[Cl]
+c-,:P-,:c
+[S](=[O,S])-,:[F,Br,Cl,I]
+[P,S]-,:[Cl,Br,F,I]
+S-,:S
+[CX4][N+]#[C-]
+N#C-,:C=C
+C(=O)-,:O-,:c1:,-c:,-c:,-c(-,:[N+](=O)[O-]):,-c:,-c:,-1
+end
+
+Synthon Specific Exclusion SMARTS:
+42C_A_Anhydride
+[#6][CX3D3!R](=O)[O!R][CX3D3!R](=O)[#6].[#6][CX3D3!R](=O)[O!R][CX3D3!R](=O)[#6]
+[#6][CX3D3!R](=O)Cl
+[cX3H0&$(c!@[#6]),cX3H1]1o[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3H0&$(C!@[#6]),CX3H1]1=[CX3H0&$(C!@[#6]),CX3H1][CX3H0&$(C!@[#6]),CX3H1]=[CX3H0&$(C!@[#6]),CX3H1][CX4H2]1
+[cX3H0&$(c!@[#6]),cX3H1]1n([#6])[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+C1C3CC2CC(CC1C2)C3
+[OX2H1]
+[CX3](=O)[OX2H1]
+[CX3]=[OX1].[CX3]=[OX1].[CX3]=[OX1]
+[NX3H2,NX3H1]
+[P]
+[CX4][Cl,Br,I,F]
+[CX2]#[NX1]
+end
+
+42C_A_AcylChloride
+[#6][CX3D3!R](=O)[O!R][CX3D3!R](=O)[#6]
+[#6][CX3D3!R](=O)Cl.[#6][CX3D3!R](=O)Cl
+[cX3H0&$(c!@[#6]),cX3H1]1o[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3H0&$(C!@[#6]),CX3H1]1=[CX3H0&$(C!@[#6]),CX3H1][CX3H0&$(C!@[#6]),CX3H1]=[CX3H0&$(C!@[#6]),CX3H1][CX4H2]1
+[cX3H0&$(c!@[#6]),cX3H1]1n([#6])[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[OX2H1][c]
+[OX2H1][#6][CX4](F)(F)(F)
+[OX2H1][#6]S(=O)(=O)
+[OX2H1][#6][CX2]#[NX1]
+[CX3](=O)[OX2H1]
+[OX2H1][#6][CX3D3!R](=O)[Cl,Br,I]
+[NH2,NH1][c]
+[NH2,NH1][#6][CX4](F)(F)(F)
+[NH2,NH1][#6]S(=O)(=O)
+[NH2,NH1][#6][CX2]#[NX1]
+[NH2,NH1](=O)[OX2H1]
+[NH2,NH1][#6][CX3D3!R](=O)[Cl,Br,I]
+[nH1]
+[$([#16X4]([NX3])(=[OX1])(=[OX1])[#6]),$([#16X4+2]([NX3])([OX1-])([OX1-])[#6])]
+[NH1,NH2][CX3](=[OX1])[#6]
+[N]=[NX1]
+PCl
+[Si]
+C1C3CC2CC(CC1C2)C3
+end
+
+42C_B_Furan_2H
+[#6][CX3D3!R](=O)[O!R][CX3D3!R](=O)[#6]
+[#6][CX3D3!R](=O)Cl
+[cX3H0&$(c!@[#6]),cX3H1]1o[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1.[cX3H0&$(c!@[#6]),cX3H1]1o[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3H0&$(C!@[#6]),CX3H1]1=[CX3H0&$(C!@[#6]),CX3H1][CX3H0&$(C!@[#6]),CX3H1]=[CX3H0&$(C!@[#6]),CX3H1][CX4H2]1
+[cX3H0&$(c!@[#6]),cX3H1]1n([#6])[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3]=[OX1].[CX3]=[OX1].[CX3]=[OX1]
+C1C3CC2CC(CC1C2)C3
+end
+
+42C_B_Furan_1H
+[#6][CX3D3!R](=O)[O!R][CX3D3!R](=O)[#6]
+[#6][CX3D3!R](=O)Cl
+[cX3H0&$(c!@[#6]),cX3H1]1o[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1.[cX3H0&$(c!@[#6]),cX3H1]1o[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3H0&$(C!@[#6]),CX3H1]1=[CX3H0&$(C!@[#6]),CX3H1][CX3H0&$(C!@[#6]),CX3H1]=[CX3H0&$(C!@[#6]),CX3H1][CX4H2]1
+[cX3H0&$(c!@[#6]),cX3H1]1n([#6])[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3]=[OX1].[CX3]=[OX1].[CX3]=[OX1]
+C1C3CC2CC(CC1C2)C3
+end
+
+42C_B_Furan_0H
+[#6][CX3D3!R](=O)[O!R][CX3D3!R](=O)[#6]
+[#6][CX3D3!R](=O)Cl
+[cX3H0&$(c!@[#6]),cX3H1]1o[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1.[cX3H0&$(c!@[#6]),cX3H1]1o[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3H0&$(C!@[#6]),CX3H1]1=[CX3H0&$(C!@[#6]),CX3H1][CX3H0&$(C!@[#6]),CX3H1]=[CX3H0&$(C!@[#6]),CX3H1][CX4H2]1
+[cX3H0&$(c!@[#6]),cX3H1]1n([#6])[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3]=[OX1].[CX3]=[OX1].[CX3]=[OX1]
+C1C3CC2CC(CC1C2)C3
+end
+
+42C_B_Pentole_2H
+[#6][CX3D3!R](=O)[O!R][CX3D3!R](=O)[#6]
+[#6][CX3D3!R](=O)Cl
+[cX3H0&$(c!@[#6]),cX3H1]1o[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3H0&$(C!@[#6]),CX3H1]1=[CX3H0&$(C!@[#6]),CX3H1][CX3H0&$(C!@[#6]),CX3H1]=[CX3H0&$(C!@[#6]),CX3H1][CX4H2]1.[CX3H0&$(C!@[#6]),CX3H1]1=[CX3H0&$(C!@[#6]),CX3H1][CX3H0&$(C!@[#6]),CX3H1]=[CX3H0&$(C!@[#6]),CX3H1][CX4H2]1
+[cX3H0&$(c!@[#6]),cX3H1]1n([#6])[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3]=[OX1].[CX3]=[OX1].[CX3]=[OX1]
+C1C3CC2CC(CC1C2)C3
+end
+
+42C_B_Pentole_1H
+[#6][CX3D3!R](=O)[O!R][CX3D3!R](=O)[#6]
+[#6][CX3D3!R](=O)Cl
+[cX3H0&$(c!@[#6]),cX3H1]1o[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3H0&$(C!@[#6]),CX3H1]1=[CX3H0&$(C!@[#6]),CX3H1][CX3H0&$(C!@[#6]),CX3H1]=[CX3H0&$(C!@[#6]),CX3H1][CX4H2]1.[CX3H0&$(C!@[#6]),CX3H1]1=[CX3H0&$(C!@[#6]),CX3H1][CX3H0&$(C!@[#6]),CX3H1]=[CX3H0&$(C!@[#6]),CX3H1][CX4H2]1
+[cX3H0&$(c!@[#6]),cX3H1]1n([#6])[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3]=[OX1].[CX3]=[OX1].[CX3]=[OX1]
+C1C3CC2CC(CC1C2)C3
+end
+
+42C_B_Pentole_0H
+[#6][CX3D3!R](=O)[O!R][CX3D3!R](=O)[#6]
+[#6][CX3D3!R](=O)Cl
+[cX3H0&$(c!@[#6]),cX3H1]1o[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3H0&$(C!@[#6]),CX3H1]1=[CX3H0&$(C!@[#6]),CX3H1][CX3H0&$(C!@[#6]),CX3H1]=[CX3H0&$(C!@[#6]),CX3H1][CX4H2]1.[CX3H0&$(C!@[#6]),CX3H1]1=[CX3H0&$(C!@[#6]),CX3H1][CX3H0&$(C!@[#6]),CX3H1]=[CX3H0&$(C!@[#6]),CX3H1][CX4H2]1
+[cX3H0&$(c!@[#6]),cX3H1]1n([#6])[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3]=[OX1].[CX3]=[OX1].[CX3]=[OX1]
+C1C3CC2CC(CC1C2)C3
+end
+
+42C_B_Pyrrole_2H
+[#6][CX3D3!R](=O)[O!R][CX3D3!R](=O)[#6]
+[#6][CX3D3!R](=O)Cl
+[cX3H0&$(c!@[#6]),cX3H1]1o[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3H0&$(C!@[#6]),CX3H1]1=[CX3H0&$(C!@[#6]),CX3H1][CX3H0&$(C!@[#6]),CX3H1]=[CX3H0&$(C!@[#6]),CX3H1][CX4H2]1
+[cX3H0&$(c!@[#6]),cX3H1]1n([#6])[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1.[cX3H0&$(c!@[#6]),cX3H1]1n([#6])[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3]=[OX1].[CX3]=[OX1].[CX3]=[OX1]
+C1C3CC2CC(CC1C2)C3
+end
+
+42C_B_Pyrrole_1H
+[#6][CX3D3!R](=O)[O!R][CX3D3!R](=O)[#6]
+[#6][CX3D3!R](=O)Cl
+[cX3H0&$(c!@[#6]),cX3H1]1o[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3H0&$(C!@[#6]),CX3H1]1=[CX3H0&$(C!@[#6]),CX3H1][CX3H0&$(C!@[#6]),CX3H1]=[CX3H0&$(C!@[#6]),CX3H1][CX4H2]1
+[cX3H0&$(c!@[#6]),cX3H1]1n([#6])[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1.[cX3H0&$(c!@[#6]),cX3H1]1n([#6])[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3]=[OX1].[CX3]=[OX1].[CX3]=[OX1]
+C1C3CC2CC(CC1C2)C3
+end
+
+42C_B_Pyrrole_0H
+[#6][CX3D3!R](=O)[O!R][CX3D3!R](=O)[#6]
+[#6][CX3D3!R](=O)Cl
+[cX3H0&$(c!@[#6]),cX3H1]1o[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3H0&$(C!@[#6]),CX3H1]1=[CX3H0&$(C!@[#6]),CX3H1][CX3H0&$(C!@[#6]),CX3H1]=[CX3H0&$(C!@[#6]),CX3H1][CX4H2]1
+[cX3H0&$(c!@[#6]),cX3H1]1n([#6])[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1.[cX3H0&$(c!@[#6]),cX3H1]1n([#6])[cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1][cX3H0&$(c!@[#6]),cX3H1]1
+[CX3]=[OX1].[CX3]=[OX1].[CX3]=[OX1]
+C1C3CC2CC(CC1C2)C3
+end
+
+Max Heavy Atom Count:
+42C_A_Anhydride 40
+42C_A_AcylChloride 40
+42C_B_Furan_2H 40
+42C_B_Furan_1H 40
+42C_B_Furan_0H 40
+42C_B_Pentole_2H 40
+42C_B_Pentole_1H 40
+42C_B_Pentole_0H 40
+42C_B_Pyrrole_2H 40
+42C_B_Pyrrole_1H 40
+42C_B_Pyrrole_0H 40
+
+Reaction Tags:
+42C_A_Anhydride A
+42C_A_AcylChloride Z
+42C_B_Furan_2H B
+42C_B_Furan_1H B
+42C_B_Furan_0H B
+42C_B_Pentole_2H C
+42C_B_Pentole_1H C
+42C_B_Pentole_0H C
+42C_B_Pyrrole_2H D
+42C_B_Pyrrole_1H D
+42C_B_Pyrrole_0H D

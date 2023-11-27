@@ -1,0 +1,123 @@
+Lib_ID: ts
+Minimum_Purchasability_Code: 0
+
+Synthon SMARTS:
+TS_A a[OX2H1,NX3H2,SX2H1]
+TS_Z a[$([SX4](=[OX1])(=[OX1])[NX3H2])]
+TS_B0 O=C([Cl,Br,I])[CX4H2!R,CX4H3!R]([$([CX2]#[NX1]),$([SX4](=[OX1])=[OX1]),$([CX3](=[OX1])),$([CX3](=[OX1])[OX2H0])])
+TS_B1 O=C([Cl,Br,I])[CX4H2][CX4H2!R,CX4H3!R]([$([CX2]#[NX1]),$([SX4](=[OX1])=[OX1]),$([CX3](=[OX1])),$([CX3](=[OX1])[OX2H0])])
+TS_B2 O=C([Cl,Br,I])[CX4H2][CX4H2][CX4H2!R,CX4H3!R]([$([CX2]#[NX1]),$([SX4](=[OX1])=[OX1]),$([CX3](=[OX1])),$([CX3](=[OX1])[OX2H0])])
+TS_B0c O=C([Cl,Br,I])[CX4H1!R]([$([CX2]#[NX1]),$([SX4](=[OX1])=[OX1]),$([CX3](=[OX1])),$([CX3](=[OX1])[OX2H0])])
+TS_B1c O=C([Cl,Br,I])[CX4H2][CX4H1!R]([$([CX2]#[NX1]),$([SX4](=[OX1])=[OX1]),$([CX3](=[OX1])),$([CX3](=[OX1])[OX2H0])])
+TS_B2c  O=C([Cl,Br,I])[CX4H2][CX4H2][CX4H1!R]([$([CX2]#[NX1]),$([SX4](=[OX1])=[OX1]),$([CX3](=[OX1])),$([CX3](=[OX1])[OX2H0])])
+end
+
+Allow Multiple Symmetric Synthons:
+end
+
+Global Exclusion SMARTS:
+S(=O)(=O)F
+P=C
+N=C=N
+[#14&H1,#14&H2,#14&H3]
+O=C-,:N=[N&+]=[N&-]
+FB(F)F
+S(=O)(=O)-,:[Cl,Br]
+[Si]-[I,Br,Cl,F]
+O-,:S(=O)(=O)-,:C(-,:F)(-,:F)-,:F
+C(=O)-,:O-,:n:,-n:,-n
+O-,:[Cl](-,:O)(-,:O)-,:O
+C(=O)-,:O-,:c1:,-c(-,:F):,-c(-,:F):,-c(-,:F):,-c(-,:F):,-c:,-1-,:F
+[Si]O
+S-,:C#N
+O-,:O
+N=C=[S,O]
+P=S
+N-,:P(=O)(-,:N)-,:N
+C=C-[CD2]=O
+[CX3]C(=O)Br
+[C&X4;C&H1,C&H2]-I
+[C&X4;C&H1,C&H2]-[Br]
+[N&R0]-,:[N&R0]-,:C=O
+[#8&D1]-,:[#5](-,:[#6])-,:[#8&D1]
+[CX3]C(=O)I
+[CX3]C(=O)Cl
+N#C-,:C-,:[O&H1]
+[CX3][N+]#[C-]
+c-,:P-,:c
+[P,S]-,:[Cl,Br,F,I]
+S-,:S
+C(=O)-,:O-,:C=O
+[CX4][N+]#[C-]
+N#C-,:C=C
+C(=O)-,:O-,:c1:,-c:,-c:,-c(-,:[N+](=O)[O-]):,-c:,-c:,-1
+[CX4][F,Cl,Br,I]
+[c-]
+[c]=[N+!r]
+end
+
+
+Synthon Specific Exclusion SMARTS:
+TS_A
+O=C([F,Cl,Br,I])
+a[OX2H1,NX3H2,SX2H1,$([SX4](=[OX1])(=[OX1])[NX3H2])].a[OX2H1,NX3H2,SX2H1,$([SX4](=[OX1])(=[OX1])[NX3H2])]
+[S,C](=[O,S])-,:[F,Br,Cl,I]
+aF
+end
+
+TS_Z
+O=C([F,Cl,Br,I])
+a[OX2H1,NX3H2,SX2H1,$([SX4](=[OX1])(=[OX1])[NX3H2])].a[OX2H1,NX3H2,SX2H1,$([SX4](=[OX1])(=[OX1])[NX3H2])]
+[S,C](=[O,S])-,:[F,Br,Cl,I]
+aF
+end
+
+TS_B0
+O=C([F,Cl,Br,I]).O=C([F,Cl,Br,I])
+a[OX2H1,NX3H2,SX2H1,$([SX4](=[OX1])(=[OX1])[NX3H2])]
+end
+
+TS_B1
+O=C([F,Cl,Br,I]).O=C([F,Cl,Br,I])
+a[OX2H1,NX3H2,SX2H1,$([SX4](=[OX1])(=[OX1])[NX3H2])]
+end
+
+TS_B2
+O=C([F,Cl,Br,I]).O=C([F,Cl,Br,I])
+a[OX2H1,NX3H2,SX2H1,$([SX4](=[OX1])(=[OX1])[NX3H2])]
+end
+
+TS_B0c
+O=C([F,Cl,Br,I]).O=C([F,Cl,Br,I])
+a[OX2H1,NX3H2,SX2H1,$([SX4](=[OX1])(=[OX1])[NX3H2])]
+end
+
+TS_B1c
+O=C([F,Cl,Br,I]).O=C([F,Cl,Br,I])
+a[OX2H1,NX3H2,SX2H1,$([SX4](=[OX1])(=[OX1])[NX3H2])]
+end
+
+TS_B2c
+O=C([F,Cl,Br,I]).O=C([F,Cl,Br,I])
+a[OX2H1,NX3H2,SX2H1,$([SX4](=[OX1])(=[OX1])[NX3H2])]
+end
+
+Max Heavy Atom Count:
+TS_A 40
+TS_Z 40
+TS_B0 40
+TS_B1 40
+TS_B2 40
+TS_B0c 40
+TS_B1c 40
+TS_B2c 40
+
+Reaction Tags:
+TS_A A
+TS_Z Z
+TS_B0 B
+TS_B1 C
+TS_B2 D
+TS_B0c E
+TS_B1c F
+TS_B2c G
