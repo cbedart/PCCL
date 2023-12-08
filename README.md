@@ -6,7 +6,10 @@ This GitHub repository contains all information related to the Pan-Canadian Chem
 
 If you find the PCCL useful or if you use it, please cite our paper:
 
-XXXXXXX
+Bedart, C. *et al.* A Mechanism to Open Academic Chemistry to High-Throughput Virtual Screening. ChemRxiv (2023).  
+doi:10.26434/chemrxiv-2023-jgbgv  
+This content is a preprint and has not been peer-reviewed.  
+  
 
 ## Reagents and chemical reactions information
 
