@@ -29,3 +29,8 @@ Inclusion and exclusion rules, as well as encoded chemical reactions, can be fou
 
 ## Website  
 The source code used for the <https://pccl.thesgc.org> website can be found in the “PCCL_website” section. This website also uses PostgreSQL functionalities as well as the [RDKit database cartridge](https://www.rdkit.org/docs/Cartridge.html).
+
+
+## 127m cheap/druglike subset of the Pan-Canadian Chemical Library
+All the compounds can be found on Zenodo at <https://zenodo.org/records/10419028>
+
