@@ -6,9 +6,8 @@ This GitHub repository contains all information related to the Pan-Canadian Chem
 
 If you find the PCCL useful or if you use it, please cite our paper:
 
-Bedart, C. *et al.* A Mechanism to Open Academic Chemistry to High-Throughput Virtual Screening. ChemRxiv (2023).  
-doi:10.26434/chemrxiv-2023-jgbgv  
-This content is a preprint and has not been peer-reviewed.  
+Bedart, C. *et al.* The Pan-Canadian Chemical Library: A mechanism to open academic chemistry to high-throughput virtual screening. Scientific Data 11, (2024).
+doi:[10.1038/s41597-024-03443-5](https://www.nature.com/articles/s41597-024-03443-5)
   
 
 ## Reagents and chemical reactions information
@@ -32,5 +31,5 @@ The source code used for the <https://pccl.thesgc.org> website can be found in t
 
 
 ## 127m cheap/druglike subset of the Pan-Canadian Chemical Library
-All the compounds can be found on Zenodo at <https://zenodo.org/records/10419028>
+All the compounds can be found on Zenodo at <https://zenodo.org/records/11371919>
 
